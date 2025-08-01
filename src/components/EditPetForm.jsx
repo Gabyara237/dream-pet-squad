@@ -32,6 +32,23 @@ const EditPetForm = () => {
         fetchPet();
     }, [id]);
     
+    const deletePet = async () => {
+        const confirmDelete = window.confirm("Are you sure you want to delete this pet?");
+        if (!confirmDelete) return;
+
+        const { error } = await supabase
+            .from("pets")
+            .delete()
+            .eq("id", id);
+
+        if (error) {
+            console.error("Delete failed:", error.message);
+            alert("There was an error deleting the pet.");
+        } else {
+            alert("Pet deleted successfully!");
+            navigate("/pet-squad");
+        }
+    };
 
     const handleAttributeChange = (attribute, value) => {
         setAttributes(prev => ({
@@ -131,6 +148,9 @@ const EditPetForm = () => {
                 </div>
 
                 <button type="submit">Update Pet</button>
+                <button type="button" onClick={deletePet} style={{ marginLeft: "1rem", backgroundColor: "#f44336", color: "white" }}>
+                    Delete Pet
+                </button>
             </form>
         </div>
     );
