@@ -1,0 +1,18 @@
+{
+  "service": {
+    "description": "These loyal companions are trained to assist people with disabilities and provide life-changing support.",
+    "image": "../assets/service.png"
+  },
+  "protector": {
+    "description": "Always alert and brave, these pets guard their home and loved ones with courage.",
+    "image": "../assets/protector.png"
+  },
+  "athlete": {
+    "description": "Built for speed and agility, these dogs are perfect for competitions and high-energy adventures.",
+    "image": "../assets/athlete.png"
+  },
+  "companion": {
+    "description": "Gentle, calm and affectionate, these pets love spending time with their families at home.",
+    "image": "../assets/companion.png"
+  }
+}

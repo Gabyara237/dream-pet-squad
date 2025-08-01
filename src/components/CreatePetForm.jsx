@@ -56,6 +56,7 @@ const CreatePetForm = () => {
                 <form>
 
                     <div className="form-group name-group" >
+                        
                         <label htmlFor="name" >Pet Name:</label>
                         <input 
                             type="text" 
@@ -66,6 +67,7 @@ const CreatePetForm = () => {
                         />
                     </div>
                     <div className="form-group category-group">
+                        <h3>Category:</h3>
                         <input 
                             type="radio" 
                             id="service"
@@ -93,6 +95,7 @@ const CreatePetForm = () => {
                             onChange={(e)=>setCategory(e.target.value)}
                         />
                         <label htmlFor="athlete">🐶 Athlete</label>
+                        
                         <input
                             type="radio"
                             id="companion"
@@ -105,6 +108,7 @@ const CreatePetForm = () => {
                     </div>
                     
                     <div className="form-group breed-group">
+                        <h3>Breed:</h3>
                         <select 
                             value={breed} 
                             onChange={(e)=>setBreed(e.target.value)} 
@@ -121,6 +125,7 @@ const CreatePetForm = () => {
                     </div>
 
                     <div className="form-group attribute-group">
+                        <h3>Attributes:</h3>
                         
                             {attributesByCategory[category]?(
                                 <>
