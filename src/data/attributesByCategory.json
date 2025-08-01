@@ -1,0 +1,6 @@
+{
+  "service": ["Obedience", "Concentration", "Stamina"],
+  "protector": ["Alertness", "Strength", "Loyalty"],
+  "athlete": ["Energy", "Skill", "Style"],
+  "companion": ["Cuteness", "Affection", "Calmness"]
+}

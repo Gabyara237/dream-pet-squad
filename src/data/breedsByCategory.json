@@ -1,0 +1,6 @@
+{
+  "service": ["Labrador Retriever", "Golden Retriever", "German Shepherd"],
+  "protector": ["Rottweiler", "Doberman", "Bullmastiff"],
+  "athlete": ["Border Collie", "Whippet", "Jack Russell Terrier"],
+  "companion": ["Pug", "Cavalier King Charles", "Shih Tzu"]
+}
