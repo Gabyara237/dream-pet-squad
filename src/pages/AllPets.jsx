@@ -27,6 +27,7 @@ const AllPets = () =>{
                 { pets && pets.length >0 ? (
                     pets.map(pet=>(
                         <PetCard 
+                            key={pet.id}
                             id={pet.id}
                             name={pet.name} 
                             breed={pet.breed} 
